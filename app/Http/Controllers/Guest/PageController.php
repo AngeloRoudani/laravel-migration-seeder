@@ -9,8 +9,10 @@ use App\Models\Train;
 class PageController extends Controller
 {
     public function index() {
-        $current = date('Y-m-d');
-        $trains = Train::where('departed_hour','=','$current')->get();
+        $trains = Train::all();
+        /*$current = date('d');
+        $trains = Train::where('departed_hour','=<','current')->get();*/
+        
     
 
         return view('home',compact('trains'));

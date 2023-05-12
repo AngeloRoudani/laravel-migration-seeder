@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url('../img/shinkansen.jpeg');
+    background-size: cover;
+}
+
+.train {
+    width: calc((100% / 4) - 1.5rem);
+    margin: 0.75rem;
+}
